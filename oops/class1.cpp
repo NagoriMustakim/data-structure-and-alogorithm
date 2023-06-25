@@ -4,6 +4,8 @@
 // polymorphism: compile time `[function and operator overloading]` and run time types of polymorphism
 // overloading and overriding
 // abstraction implementation hiding like bank atm
+// interface and abstract [Abstract class with pure virtual function]
+// pure virtual function which does not have implementation
 #include "iostream"
 using namespace std;
 
@@ -42,9 +44,23 @@ public:
         cout << "good morning" << str;
     }
 };
-class B : public A
+class c
 {
 public:
+    // method overloading
+    void greet()
+    {
+        cout << "good morining";
+    }
+    void greet(string str)
+    {
+        cout << "good morning" << str;
+    }
+};
+class B : public A, c
+{
+public:
+    // method overriding
     void greet()
     {
         cout << "good night";

@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 
-    int arr[] = {2, 0, 2, 1, 1, 0};
+    int arr[] = {2, 0, 2, 1, 1, 0}; // 0 for red 1 for white and 2 for blue
     for (int i = 1; i < 6; i++)
     {
         for (int j = 0; j < 6 - i; j++)
